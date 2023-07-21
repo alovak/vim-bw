@@ -98,105 +98,105 @@ fun! bw#init(c) abort
     call bw#hi('DiffText', a:c.blue, a:c.none, 'underline')
 
     " Neovim Treesitter
-    call bw#hi('@none', a:c.none, a:c.none, 'none')
-    call bw#hilink('@preproc', 'PreProc')
-    call bw#hilink('@define', 'Define')
-    call bw#hilink('@operator', 'Operator')
+    " call bw#hi('@none', a:c.none, a:c.none, 'none')
+    " call bw#hilink('@preproc', 'PreProc')
+    " call bw#hilink('@define', 'Define')
+    " call bw#hilink('@operator', 'Operator')
 
-    call bw#hilink('@punctuation.delimeter', 'Delimeter')
-    call bw#hilink('@punctuation.bracket', 'Delimeter')
-    call bw#hilink('@punctuation.special', 'Delimeter')
+    " call bw#hilink('@punctuation.delimeter', 'Delimeter')
+    " call bw#hilink('@punctuation.bracket', 'Delimeter')
+    " call bw#hilink('@punctuation.special', 'Delimeter')
 
-    call bw#hilink('@string', 'String')
-    call bw#hilink('@string.regex', 'String')
-    call bw#hilink('@string.escape', 'SpecialChar')
-    call bw#hilink('@string.special', 'SpecialChar')
+    " call bw#hilink('@string', 'String')
+    " call bw#hilink('@string.regex', 'String')
+    " call bw#hilink('@string.escape', 'SpecialChar')
+    " call bw#hilink('@string.special', 'SpecialChar')
 
-    call bw#hilink('@character', 'Character')
-    call bw#hilink('@character.special', 'SpecialChar')
+    " call bw#hilink('@character', 'Character')
+    " call bw#hilink('@character.special', 'SpecialChar')
 
-    call bw#hilink('@boolean', 'Boolean')
-    call bw#hilink('@number', 'Number')
-    call bw#hilink('@float', 'Float')
+    " call bw#hilink('@boolean', 'Boolean')
+    " call bw#hilink('@number', 'Number')
+    " call bw#hilink('@float', 'Float')
 
-    call bw#hilink('@function', 'Function')
-    call bw#hilink('@function.call', 'Function')
-    call bw#hilink('@function.builtin', 'Special')
-    call bw#hilink('@function.macro', 'Macro')
-    call bw#hilink('@method', 'Function')
-    call bw#hilink('@method.call', 'Function')
-    call bw#hilink('@constructor', 'Special')
-    call bw#hilink('@parameter', 'Identifier')
+    " call bw#hilink('@function', 'Function')
+    " call bw#hilink('@function.call', 'Function')
+    " call bw#hilink('@function.builtin', 'Special')
+    " call bw#hilink('@function.macro', 'Macro')
+    " call bw#hilink('@method', 'Function')
+    " call bw#hilink('@method.call', 'Function')
+    " call bw#hilink('@constructor', 'Special')
+    " call bw#hilink('@parameter', 'Identifier')
 
-    call bw#hilink('@keyword', 'Keyword')
-    call bw#hilink('@keyword.function', 'Keyword')
-    call bw#hilink('@keyword.operator', 'Keyword')
-    call bw#hilink('@keyword.return', 'Keyword')
+    " call bw#hilink('@keyword', 'Keyword')
+    " call bw#hilink('@keyword.function', 'Keyword')
+    " call bw#hilink('@keyword.operator', 'Keyword')
+    " call bw#hilink('@keyword.return', 'Keyword')
 
-    call bw#hilink('@conditional', 'Conditional')
-    call bw#hilink('@repeat', 'Repeat')
-    call bw#hilink('@debug', 'Debug')
-    call bw#hilink('@label', 'Label')
-    call bw#hilink('@include', 'Include')
-    call bw#hilink('@exception', 'Exception')
+    " call bw#hilink('@conditional', 'Conditional')
+    " call bw#hilink('@repeat', 'Repeat')
+    " call bw#hilink('@debug', 'Debug')
+    " call bw#hilink('@label', 'Label')
+    " call bw#hilink('@include', 'Include')
+    " call bw#hilink('@exception', 'Exception')
 
-    call bw#hilink('@type', 'Type')
-    call bw#hilink('@type.builtin', 'Type')
-    call bw#hilink('@type.qualifier', 'Type')
-    call bw#hilink('@type.definition', 'Typedef')
+    " call bw#hilink('@type', 'Type')
+    " call bw#hilink('@type.builtin', 'Type')
+    " call bw#hilink('@type.qualifier', 'Type')
+    " call bw#hilink('@type.definition', 'Typedef')
 
-    call bw#hilink('@storageclass', 'StorageClass')
-    call bw#hilink('@attribute', 'PreProc')
-    call bw#hilink('@field', 'Identifier')
-    call bw#hilink('@property', 'Identifier')
+    " call bw#hilink('@storageclass', 'StorageClass')
+    " call bw#hilink('@attribute', 'PreProc')
+    " call bw#hilink('@field', 'Identifier')
+    " call bw#hilink('@property', 'Identifier')
 
-    call bw#hilink('@variable', 'Normal')
-    call bw#hilink('@variable.builtin', 'Special')
-    call bw#hilink('@constant', 'Constant')
-    call bw#hilink('@constant.builtin', 'Special')
-    call bw#hilink('@constant.macro', 'Define')
-    call bw#hilink('@namespace', 'Include')
-    call bw#hilink('@symbol', 'Identifier')
+    " call bw#hilink('@variable', 'Normal')
+    " call bw#hilink('@variable.builtin', 'Special')
+    " call bw#hilink('@constant', 'Constant')
+    " call bw#hilink('@constant.builtin', 'Special')
+    " call bw#hilink('@constant.macro', 'Define')
+    " call bw#hilink('@namespace', 'Include')
+    " call bw#hilink('@symbol', 'Identifier')
 
-    call bw#hilink('@text', 'Normal')
-    call bw#hi('@text.strong', a:c.white, a:c.black, 'bold')
-    call bw#hi('@text.emphasis', a:c.white, a:c.black, 'italic')
-    call bw#hi('@text.underline', a:c.white, a:c.black, 'underline')
-    call bw#hi('@text.strike', a:c.white, a:c.black, 'strikethrough')
-    call bw#hilink('@text.title', 'Title')
-    call bw#hilink('@text.literal', 'String')
-    call bw#hilink('@text.uri', 'Underlined')
-    call bw#hilink('@text.math', 'Special')
-    call bw#hilink('@text.environment', 'Macro')
-    call bw#hilink('@text.environment.name', 'Type')
-    call bw#hilink('@text.reference', 'Constant')
+    " call bw#hilink('@text', 'Normal')
+    " call bw#hi('@text.strong', a:c.white, a:c.black, 'bold')
+    " call bw#hi('@text.emphasis', a:c.white, a:c.black, 'italic')
+    " call bw#hi('@text.underline', a:c.white, a:c.black, 'underline')
+    " call bw#hi('@text.strike', a:c.white, a:c.black, 'strikethrough')
+    " call bw#hilink('@text.title', 'Title')
+    " call bw#hilink('@text.literal', 'String')
+    " call bw#hilink('@text.uri', 'Underlined')
+    " call bw#hilink('@text.math', 'Special')
+    " call bw#hilink('@text.environment', 'Macro')
+    " call bw#hilink('@text.environment.name', 'Type')
+    " call bw#hilink('@text.reference', 'Constant')
 
-    call bw#hilink('@text.todo', 'Todo')
-    call bw#hilink('@text.note', 'SpecialComment')
-    call bw#hilink('@text.warning', 'WarningMsg')
-    call bw#hilink('@text.danger', 'ErrorMsg')
+    " call bw#hilink('@text.todo', 'Todo')
+    " call bw#hilink('@text.note', 'SpecialComment')
+    " call bw#hilink('@text.warning', 'WarningMsg')
+    " call bw#hilink('@text.danger', 'ErrorMsg')
 
-    call bw#hilink('@tag', 'Tag')
-    call bw#hilink('@tag.attribute', 'Identifier')
-    call bw#hilink('@tag.delimiter', 'Delimiter')
+    " call bw#hilink('@tag', 'Tag')
+    " call bw#hilink('@tag.attribute', 'Identifier')
+    " call bw#hilink('@tag.delimiter', 'Delimiter')
 
-    " ------------
-    " Semantic Highlighting (nvim 0.9+)
-    " ------------
-    call bw#hilink('@lsp.type.namespace', '@namespace')
-    call bw#hilink('@lsp.type.type', '@type')
-    call bw#hilink('@lsp.type.class', '@type')
-    call bw#hilink('@lsp.type.enum', '@type')
-    call bw#hilink('@lsp.type.interface', '@type')
-    call bw#hilink('@lsp.type.struct', '@structure')
-    call bw#hilink('@lsp.type.parameter', '@parameter')
-    call bw#hilink('@lsp.type.variable', '@variable')
-    call bw#hilink('@lsp.type.property', '@property')
-    call bw#hilink('@lsp.type.enumMember', '@constant')
-    call bw#hilink('@lsp.type.function', '@function')
-    call bw#hilink('@lsp.type.method', '@method')
-    call bw#hilink('@lsp.type.macro', '@macro')
-    call bw#hilink('@lsp.type.decorator', '@function')
+    " " ------------
+    " " Semantic Highlighting (nvim 0.9+)
+    " " ------------
+    " call bw#hilink('@lsp.type.namespace', '@namespace')
+    " call bw#hilink('@lsp.type.type', '@type')
+    " call bw#hilink('@lsp.type.class', '@type')
+    " call bw#hilink('@lsp.type.enum', '@type')
+    " call bw#hilink('@lsp.type.interface', '@type')
+    " call bw#hilink('@lsp.type.struct', '@structure')
+    " call bw#hilink('@lsp.type.parameter', '@parameter')
+    " call bw#hilink('@lsp.type.variable', '@variable')
+    " call bw#hilink('@lsp.type.property', '@property')
+    " call bw#hilink('@lsp.type.enumMember', '@constant')
+    " call bw#hilink('@lsp.type.function', '@function')
+    " call bw#hilink('@lsp.type.method', '@method')
+    " call bw#hilink('@lsp.type.macro', '@macro')
+    " call bw#hilink('@lsp.type.decorator', '@function')
 
     " ------------
     " LSP, Diagnostics
@@ -349,8 +349,8 @@ fun! bw#init(c) abort
     call bw#hi('mkdLineBreak', a:c.none, a:c.red, 'none')
     call bw#hi('mkdInlineURL', a:c.white, a:c.none, 'underline')
 
-    call bw#hilink('@punctuation.special.markdown', 'mkdHeading')
-    call bw#hilink('@text.reference.markdown', 'mkdHeading')
+    " call bw#hilink('@punctuation.special.markdown', 'mkdHeading')
+    " call bw#hilink('@text.reference.markdown', 'mkdHeading')
 
     " org-mode
     call bw#hi('orgTodo', a:c.green, a:c.none, 'none')
@@ -504,12 +504,13 @@ fun! bw#init(c) abort
         let g:terminal_color_14 = a:c.blue["gui"]
         let g:terminal_color_15 = a:c.bright_white["gui"]
     else
-        let g:terminal_ansi_colors = [
-            \ a:c.black["gui"], a:c.red["gui"], a:c.green["gui"], 
-            \ a:c.gold["gui"], a:c.blue["gui"], a:c.purple["gui"], 
-            \ a:c.blue["gui"], a:c.medium_gray["gui"], a:c.gray["gui"],
-            \ a:c.red["gui"], a:c.green["gui"], a:c.gold["gui"],
-            \ a:c.blue["gui"], a:c.purple["gui"], a:c.blue["gui"],
-            \ a:c.bright_white["gui"]
+	let g:terminal_ansi_colors = [
+	    \ a:c.black["gui"], a:c.red["gui"], a:c.green["gui"], 
+	    \ a:c.gold["gui"], a:c.blue["gui"], a:c.purple["gui"], 
+	    \ a:c.blue["gui"], a:c.medium_gray["gui"], a:c.gray["gui"],
+	    \ a:c.red["gui"], a:c.green["gui"], a:c.gold["gui"],
+	    \ a:c.blue["gui"], a:c.purple["gui"], a:c.blue["gui"],
+	    \ a:c.bright_white["gui"]
+	\ ]
     endif
 endfunction
